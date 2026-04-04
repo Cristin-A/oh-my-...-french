@@ -17,7 +17,7 @@ const Hero = () => {
           alt="Conversation dans un café parisien"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-primary/15" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/20 to-primary/40" />
       </div>
 
       <div className="absolute inset-0 opacity-10">
