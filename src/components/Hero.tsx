@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="accueil"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-start justify-center overflow-hidden"
     >
       <div className="absolute inset-0">
         <img
@@ -17,7 +17,7 @@ const Hero = () => {
           alt="Conversation dans un café parisien"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-primary/15" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/20 to-primary/40" />
       </div>
 
       <div className="absolute inset-0 opacity-10">
@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-light rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10 pt-20">
+      <div className="container mx-auto px-6 text-center relative z-10 pt-20 mb-32">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
