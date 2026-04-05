@@ -312,11 +312,11 @@ const it: Translations = {
     book: "Prenota",
   },
   hero: {
-    subtitle: "Formazione in Francese Lingua Straniera",
+    subtitle: "",
     tagline: "Punto dopo punto, il francese prende forma",
     taglineSub: "De point en point, le français se dessine",
-    description:
-      "Laboratori di conversazione vivaci e capsule tematiche adattate al tuo livello e ai tuoi desideri. Progredisci al tuo ritmo, con metodo e piacere.",
+    headline: "Sblocca il tuo francese parlato.",
+    description: "Laboratori vivaci per progredire al tuo ritmo.",
     ctaWorkshops: "Scopri i laboratori",
     ctaCapsules: "Esplora le capsule",
   },
