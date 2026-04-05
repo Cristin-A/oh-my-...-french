@@ -20,11 +20,11 @@ const fr = {
     book: "Réserver",
   },
   hero: {
-    subtitle: "Formation en Français Langue Étrangère",
+    subtitle: "",
     tagline: "De point en point, le français se dessine",
     taglineSub: "",
-    description:
-      "Des ateliers de conversation vivants et des capsules thématiques adaptées à votre niveau et vos envies. Progressez à votre rythme, avec méthode et plaisir.",
+    headline: "Débloquez votre français à l'oral.",
+    description: "Des ateliers vivants pour progresser à votre rythme.",
     ctaWorkshops: "Découvrir les ateliers",
     ctaCapsules: "Explorer les capsules",
   },
@@ -128,11 +128,11 @@ const en: Translations = {
     book: "Book now",
   },
   hero: {
-    subtitle: "French as a Foreign Language",
+    subtitle: "",
     tagline: "Dot by dot, your French unfolds",
     taglineSub: "",
-    description:
-      "Lively conversation workshops and thematic capsules tailored to your level and interests. Progress at your own pace, with method and pleasure.",
+    headline: "Unlock your spoken French.",
+    description: "Lively workshops to progress at your own pace.",
     ctaWorkshops: "Discover workshops",
     ctaCapsules: "Explore capsules",
   },
@@ -220,11 +220,11 @@ const es: Translations = {
     book: "Reservar",
   },
   hero: {
-    subtitle: "Formación en Francés como Lengua Extranjera",
+    subtitle: "",
     tagline: "Punto a punto, el francés toma forma",
     taglineSub: "De point en point, le français se dessine",
-    description:
-      "Talleres de conversación dinámicos y cápsulas temáticas adaptadas a tu nivel y tus deseos. Progresa a tu ritmo, con método y placer.",
+    headline: "Desbloquea tu francés oral.",
+    description: "Talleres dinámicos para progresar a tu ritmo.",
     ctaWorkshops: "Descubrir los talleres",
     ctaCapsules: "Explorar las cápsulas",
   },
@@ -312,11 +312,11 @@ const it: Translations = {
     book: "Prenota",
   },
   hero: {
-    subtitle: "Formazione in Francese Lingua Straniera",
+    subtitle: "",
     tagline: "Punto dopo punto, il francese prende forma",
     taglineSub: "De point en point, le français se dessine",
-    description:
-      "Laboratori di conversazione vivaci e capsule tematiche adattate al tuo livello e ai tuoi desideri. Progredisci al tuo ritmo, con metodo e piacere.",
+    headline: "Sblocca il tuo francese parlato.",
+    description: "Laboratori vivaci per progredire al tuo ritmo.",
     ctaWorkshops: "Scopri i laboratori",
     ctaCapsules: "Esplora le capsule",
   },
@@ -404,11 +404,11 @@ const ro: Translations = {
     book: "Rezervă",
   },
   hero: {
-    subtitle: "Formare în Franceza ca Limbă Străină",
+    subtitle: "",
     tagline: "Punct cu punct, franceza prinde contur",
     taglineSub: "De point en point, le français se dessine",
-    description:
-      "Ateliere de conversație dinamice și capsule tematice adaptate nivelului și dorințelor tale. Progresează în ritmul tău, cu metodă și plăcere.",
+    headline: "Deblocați-vă franceza orală.",
+    description: "Ateliere dinamice pentru a progresa în ritmul tău.",
     ctaWorkshops: "Descoperă atelierele",
     ctaCapsules: "Explorează capsulele",
   },
