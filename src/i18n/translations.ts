@@ -20,11 +20,11 @@ const fr = {
     book: "Réserver",
   },
   hero: {
-    subtitle: "Formation en Français Langue Étrangère",
+    subtitle: "",
     tagline: "De point en point, le français se dessine",
     taglineSub: "",
-    description:
-      "Des ateliers de conversation vivants et des capsules thématiques adaptées à votre niveau et vos envies. Progressez à votre rythme, avec méthode et plaisir.",
+    headline: "Débloquez votre français à l'oral.",
+    description: "Des ateliers vivants pour progresser à votre rythme.",
     ctaWorkshops: "Découvrir les ateliers",
     ctaCapsules: "Explorer les capsules",
   },
