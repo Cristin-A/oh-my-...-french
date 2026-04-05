@@ -26,10 +26,15 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary-foreground/10"
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#accueil" className="flex items-center gap-2">
-          <img src={logoSpark} alt="Oh my French!" className="w-8 h-8" />
-          <span className="font-display text-2xl font-bold text-primary-foreground tracking-wide">
-            Oh my <span className="text-gold">French!</span>
+        <a href="#accueil" className="flex flex-col">
+          <div className="flex items-center gap-2">
+            <img src={logoSpark} alt="Oh my French!" className="w-8 h-8" />
+            <span className="font-display text-2xl font-bold text-primary-foreground tracking-wide">
+              Oh my <span className="text-gold">French!</span>
+            </span>
+          </div>
+          <span className="font-display text-[10px] md:text-xs text-primary-foreground/50 italic tracking-wide pl-10">
+            {t.hero.tagline}
           </span>
         </a>
 
