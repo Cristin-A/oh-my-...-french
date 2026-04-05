@@ -404,11 +404,11 @@ const ro: Translations = {
     book: "Rezervă",
   },
   hero: {
-    subtitle: "Formare în Franceza ca Limbă Străină",
+    subtitle: "",
     tagline: "Punct cu punct, franceza prinde contur",
     taglineSub: "De point en point, le français se dessine",
-    description:
-      "Ateliere de conversație dinamice și capsule tematice adaptate nivelului și dorințelor tale. Progresează în ritmul tău, cu metodă și plăcere.",
+    headline: "Deblocați-vă franceza orală.",
+    description: "Ateliere dinamice pentru a progresa în ritmul tău.",
     ctaWorkshops: "Descoperă atelierele",
     ctaCapsules: "Explorează capsulele",
   },
