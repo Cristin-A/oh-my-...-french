@@ -53,7 +53,7 @@ const Hero = () => {
         </a>
         <a
           href="#capsules"
-          className="border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded font-body font-medium text-base hover:border-gold hover:text-gold transition-all duration-300"
+          className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
         >
           {t.hero.ctaCapsules}
         </a>

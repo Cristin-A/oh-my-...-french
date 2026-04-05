@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <img src={logoSpark} alt="Oh my French!" className="w-8 h-8" />
             <span className="font-display text-2xl font-bold text-primary-foreground tracking-wide">
-              Oh my <span className="text-gold">French!</span>
+              Oh my ... French!
             </span>
           </div>
           <span className="font-display text-[10px] md:text-xs text-primary-foreground/50 italic tracking-wide pl-10">
