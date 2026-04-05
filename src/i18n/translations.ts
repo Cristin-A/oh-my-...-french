@@ -128,11 +128,11 @@ const en: Translations = {
     book: "Book now",
   },
   hero: {
-    subtitle: "French as a Foreign Language",
+    subtitle: "",
     tagline: "Dot by dot, your French unfolds",
     taglineSub: "",
-    description:
-      "Lively conversation workshops and thematic capsules tailored to your level and interests. Progress at your own pace, with method and pleasure.",
+    headline: "Unlock your spoken French.",
+    description: "Lively workshops to progress at your own pace.",
     ctaWorkshops: "Discover workshops",
     ctaCapsules: "Explore capsules",
   },
