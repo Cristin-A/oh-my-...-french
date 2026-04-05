@@ -220,11 +220,11 @@ const es: Translations = {
     book: "Reservar",
   },
   hero: {
-    subtitle: "Formación en Francés como Lengua Extranjera",
+    subtitle: "",
     tagline: "Punto a punto, el francés toma forma",
     taglineSub: "De point en point, le français se dessine",
-    description:
-      "Talleres de conversación dinámicos y cápsulas temáticas adaptadas a tu nivel y tus deseos. Progresa a tu ritmo, con método y placer.",
+    headline: "Desbloquea tu francés oral.",
+    description: "Talleres dinámicos para progresar a tu ritmo.",
     ctaWorkshops: "Descubrir los talleres",
     ctaCapsules: "Explorar las cápsulas",
   },
