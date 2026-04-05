@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="accueil"
-      className="relative min-h-screen flex items-start justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col overflow-hidden"
     >
       <div className="absolute inset-0">
         <img
@@ -17,7 +17,7 @@ const Hero = () => {
           alt="Conversation dans un café parisien"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/20 to-primary/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-primary/10 to-primary/30" />
       </div>
 
       <div className="absolute inset-0 opacity-10">
@@ -25,69 +25,50 @@ const Hero = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-light rounded-full blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10 pt-20 mb-32">
+      {/* Tagline under logo area */}
+      <div className="relative z-10 pt-24 px-6">
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-gold font-body text-sm uppercase tracking-[0.3em] mb-6"
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="font-body text-sm md:text-base text-primary-foreground/70 italic"
         >
-          {t.hero.subtitle}
+          {t.hero.tagline}
         </motion.p>
+      </div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-tight mb-6"
-        >
-          Oh my <span className="italic text-gold">French!</span>
-        </motion.h1>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mb-12"
-        >
-          <p className="font-display text-xl md:text-2xl text-primary-foreground/90 italic mb-2">
-            {t.hero.tagline}
-          </p>
-          {t.hero.taglineSub && (
-            <p className="font-body text-base md:text-lg text-primary-foreground/50">
-              {t.hero.taglineSub}
-            </p>
-          )}
-        </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="font-body text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-12 leading-relaxed"
-        >
-          {t.hero.description}
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.0 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <a
-            href="#ateliers"
-            className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
+      {/* Main headline centered */}
+      <div className="flex-1 flex items-center justify-center relative z-10 px-6">
+        <div className="text-center -mt-16">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-16"
           >
-            {t.hero.ctaWorkshops}
-          </a>
-          <a
-            href="#capsules"
-            className="border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded font-body font-medium text-base hover:border-gold hover:text-gold transition-all duration-300"
+            {t.hero.headline}
+          </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            {t.hero.ctaCapsules}
-          </a>
-        </motion.div>
+            <a
+              href="#ateliers"
+              className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
+            >
+              {t.hero.ctaWorkshops}
+            </a>
+            <a
+              href="#capsules"
+              className="border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded font-body font-medium text-base hover:border-gold hover:text-gold transition-all duration-300"
+            >
+              {t.hero.ctaCapsules}
+            </a>
+          </motion.div>
+        </div>
       </div>
 
       <motion.div
