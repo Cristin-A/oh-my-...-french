@@ -18,7 +18,7 @@ const Pastilles = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="capsules" className="py-24 bg-primary">
+    <section id="pastilles" className="py-24 bg-primary">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <motion.div

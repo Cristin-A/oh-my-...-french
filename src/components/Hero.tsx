@@ -52,7 +52,7 @@ const Hero = () => {
           {t.hero.ctaWorkshops}
         </a>
         <a
-          href="#capsules"
+          href="#pastilles"
           className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
         >
           {t.hero.ctaCapsules}

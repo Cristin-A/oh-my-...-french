@@ -14,7 +14,7 @@ const fr = {
   nav: {
     home: "Accueil",
     workshops: "Ateliers",
-    capsules: "Capsules",
+    capsules: "Pastilles",
     pricing: "Tarifs",
     contact: "Contact",
     book: "Réserver",
@@ -26,7 +26,7 @@ const fr = {
     headline: "Débloquez votre français à l'oral.",
     description: "Des ateliers vivants pour progresser à votre rythme.",
     ctaWorkshops: "Découvrir les ateliers",
-    ctaCapsules: "Explorer les capsules",
+    ctaCapsules: "Explorer les pastilles",
   },
   workshops: {
     label: "Conversation",
@@ -66,7 +66,7 @@ const fr = {
   },
   capsules: {
     label: "Apprentissage ciblé",
-    title: "Capsules thématiques",
+    title: "Pastilles thématiques",
     description:
       "Des modules courts et ciblés, organisés par niveau et vos envies, pour travailler un point précis de la langue. Choisissez votre niveau et explorez les thématiques qui vous correspondent.",
     categories: [
@@ -76,7 +76,7 @@ const fr = {
       { title: "Culture & Civilisation", description: "Découvrez la francophonie à travers sa culture et ses traditions." },
     ],
     levelLabel: "Niveau",
-    available: "3 à 5 capsules disponibles",
+    available: "3 à 5 pastilles disponibles",
   },
   pricing: {
     label: "Tarifs",
@@ -86,11 +86,11 @@ const fr = {
     cta: "Choisir cette formule",
     plans: [
       {
-        name: "Capsule unique",
+        name: "Pastille unique",
         price: "15",
-        unit: "par capsule",
-        description: "Accédez à une capsule thématique de votre choix.",
-        features: ["1 capsule thématique", "Exercices interactifs", "Corrections détaillées", "Accès pendant 30 jours"],
+        unit: "par pastille",
+        description: "Accédez à une pastille thématique de votre choix.",
+        features: ["1 pastille thématique", "Exercices interactifs", "Corrections détaillées", "Accès pendant 30 jours"],
       },
       {
         name: "Atelier conversation",
@@ -103,13 +103,13 @@ const fr = {
         name: "Forfait mensuel",
         price: "89",
         unit: "par mois",
-        description: "Accès illimité aux capsules et 4 ateliers par mois.",
-        features: ["Capsules illimitées", "4 ateliers de conversation", "Proposer vos thèmes", "Suivi de progression", "Communauté d'apprenants", "Priorité d'inscription"],
+        description: "Accès illimité aux pastilles et 4 ateliers par mois.",
+        features: ["Pastilles illimitées", "4 ateliers de conversation", "Proposer vos thèmes", "Suivi de progression", "Communauté d'apprenants", "Priorité d'inscription"],
       },
     ],
   },
   footer: {
-    brand: "Formation en Français Langue Étrangère. Ateliers de conversation et capsules thématiques pour tous les niveaux — avec passion et plaisir.",
+    brand: "Formation en Français Langue Étrangère. Ateliers de conversation et pastilles thématiques pour tous les niveaux — avec passion et plaisir.",
     tagline: "De point en point, le français se dessine",
     taglineSub: "",
     navigation: "Navigation",
