@@ -8,7 +8,7 @@ const Footer = () => {
   const navLinks = [
     { label: t.nav.home, href: "#accueil" },
     { label: t.nav.workshops, href: "#ateliers" },
-    { label: t.nav.capsules, href: "#capsules" },
+    { label: t.nav.capsules, href: "#pastilles" },
     { label: t.nav.pricing, href: "#tarifs" },
   ];
 
