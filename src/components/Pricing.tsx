@@ -4,7 +4,13 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 const Pricing = () => {
   const { t } = useLanguage();
-  const featuredIndex = 1;
+
+  const features = [
+    "1h de session",
+    "Groupe de 5 à 6 personnes maximum",
+    "Thème au choix",
+    "Échanges authentiques et bienveillants",
+  ];
 
   return (
     <section id="tarifs" className="py-24 bg-background">
@@ -22,88 +28,51 @@ const Pricing = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t.pricing.title}
           </h2>
-          <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t.pricing.description}
-          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {t.pricing.plans.map((plan, index) => {
-            const featured = index === featuredIndex;
-            return (
-              <motion.div
-                key={plan.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                className={`rounded-xl p-8 flex flex-col ${
-                  featured
-                    ? "bg-primary text-primary-foreground border-2 border-gold relative"
-                    : "bg-card border border-border"
-                }`}
-              >
-                {featured && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-accent-foreground text-xs font-body font-bold uppercase tracking-wider px-4 py-1 rounded-full">
-                    {t.pricing.popular}
+        <div className="max-w-md mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="bg-primary text-primary-foreground border-2 border-gold rounded-xl p-8 flex flex-col"
+          >
+            <h3 className="font-display text-2xl font-semibold text-primary-foreground mb-2">
+              Atelier de conversation
+            </h3>
+            <p className="font-body text-sm text-primary-foreground/60 mb-6">
+              Thème au choix, en petit groupe.
+            </p>
+            <div className="mb-6">
+              <span className="font-display text-5xl font-bold text-gold">25€</span>
+              <span className="font-body text-sm ml-2 text-primary-foreground/50">
+                / séance
+              </span>
+            </div>
+            <ul className="space-y-3 mb-8 flex-1">
+              {features.map((feature) => (
+                <li key={feature} className="flex items-start gap-3">
+                  <Check size={16} className="mt-0.5 flex-shrink-0 text-gold" />
+                  <span className="font-body text-sm text-primary-foreground/80">
+                    {feature}
                   </span>
-                )}
-                <h3
-                  className={`font-display text-xl font-semibold mb-2 ${
-                    featured ? "text-primary-foreground" : "text-foreground"
-                  }`}
-                >
-                  {plan.name}
-                </h3>
-                <p
-                  className={`font-body text-sm mb-6 ${
-                    featured ? "text-primary-foreground/60" : "text-muted-foreground"
-                  }`}
-                >
-                  {plan.description}
-                </p>
-                <div className="mb-6">
-                  <span
-                    className={`font-display text-5xl font-bold ${
-                      featured ? "text-gold" : "text-foreground"
-                    }`}
-                  >
-                    {plan.price}€
-                  </span>
-                  <span
-                    className={`font-body text-sm ml-2 ${
-                      featured ? "text-primary-foreground/50" : "text-muted-foreground"
-                    }`}
-                  >
-                    {plan.unit}
-                  </span>
-                </div>
-                <ul className="space-y-3 mb-8 flex-1">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3">
-                      <Check size={16} className="mt-0.5 flex-shrink-0 text-gold" />
-                      <span
-                        className={`font-body text-sm ${
-                          featured ? "text-primary-foreground/80" : "text-muted-foreground"
-                        }`}
-                      >
-                        {feature}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  className={`w-full py-3 rounded font-body font-semibold text-sm transition-all duration-300 ${
-                    featured
-                      ? "bg-gold text-accent-foreground hover:brightness-110"
-                      : "bg-primary text-primary-foreground hover:bg-navy-light"
-                  }`}
-                >
-                  {t.pricing.cta}
-                </button>
-              </motion.div>
-            );
-          })}
+                </li>
+              ))}
+            </ul>
+            <a
+              href="https://form.typeform.com/to/FVNuNllz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center py-3 rounded font-body font-semibold text-sm transition-all duration-300 bg-gold text-accent-foreground hover:brightness-110"
+            >
+              {t.pricing.cta}
+            </a>
+          </motion.div>
+
+          <p className="text-center font-body text-muted-foreground mt-8 italic">
+            D'autres formules à venir.
+          </p>
         </div>
       </div>
     </section>
