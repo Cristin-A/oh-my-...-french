@@ -77,32 +77,19 @@ const Workshops = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto text-center bg-card border border-border rounded-xl p-10"
         >
-          <h3 className="font-display text-2xl font-semibold text-foreground mb-8 text-center">
-            {t.workshops.communityTitle}
-          </h3>
-          <div className="max-w-3xl mx-auto space-y-4">
-            {t.workshops.topics.map((topic, index) => (
-              <motion.div
-                key={topic.theme}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="flex items-center justify-between bg-card border border-border rounded-lg p-5 hover:border-gold/30 transition-colors"
-              >
-                <div className="flex-1">
-                  <p className="font-body font-semibold text-foreground">{topic.theme}</p>
-                  <p className="font-body text-sm text-muted-foreground mt-1">
-                    {t.workshops.participantLabel(topic.votes)}
-                  </p>
-                </div>
-                <span className="font-body text-xs font-medium px-3 py-1.5 rounded-full bg-gold/10 text-gold">
-                  {topic.status}
-                </span>
-              </motion.div>
-            ))}
-          </div>
+          <p className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-6">
+            Prochains ateliers bientôt disponibles — rejoignez la liste d'attente
+          </p>
+          <a
+            href="https://form.typeform.com/to/FVNuNllz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
+          >
+            Rejoindre la liste d'attente
+          </a>
         </motion.div>
       </div>
     </section>
