@@ -23,8 +23,8 @@ const fr = {
     subtitle: "",
     tagline: "De point en point, le français se dessine",
     taglineSub: "",
-    headline: "Débloquez votre français à l'oral.",
-    description: "Des ateliers vivants pour progresser à votre rythme.",
+    headline: "Le français comme vous avez toujours voulu le parler.",
+    description: "Des échanges authentiques, avec légèreté — sans trop se prendre au sérieux.",
     ctaWorkshops: "Découvrir les ateliers",
     ctaCapsules: "Explorer les pastilles",
   },
@@ -40,9 +40,9 @@ const fr = {
           "Vous avez une idée de sujet ? Proposez-la à la communauté et lancez la discussion autour d'un thème qui vous passionne.",
       },
       {
-        title: "5 à 10 participants",
+        title: "5 à 6 participants maximum",
         description:
-          "Chaque atelier s'ouvre à partir de 5 inscrits et accueille au maximum 10 personnes pour garantir la qualité des échanges.",
+          "Chaque atelier accueille un maximum de 6 personnes pour garantir des échanges de qualité et que chacun puisse s'exprimer.",
       },
       {
         title: "Sessions régulières",
