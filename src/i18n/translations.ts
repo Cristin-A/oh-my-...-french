@@ -32,7 +32,7 @@ const fr = {
     label: "Conversation",
     title: "Ateliers de conversation",
     description:
-      "Rejoignez un atelier ou proposez votre propre thème de discussion. D'autres apprenants intéressés s'inscriront pour former un groupe dynamique de 5 à 10 personnes.",
+      "Rejoignez un atelier ou proposez votre propre thème de discussion. D'autres apprenants intéressés s'inscriront pour former un groupe dynamique de 5 à 6 participants maximum.",
     features: [
       {
         title: "Proposez un thème",
@@ -45,9 +45,9 @@ const fr = {
           "Chaque atelier accueille un maximum de 6 personnes pour garantir des échanges de qualité et que chacun puisse s'exprimer.",
       },
       {
-        title: "Sessions régulières",
+        title: "Sessions régulières en ligne",
         description:
-          "Des créneaux flexibles, en présentiel ou en ligne, pour s'adapter à votre emploi du temps et maintenir une pratique régulière.",
+          "Des créneaux flexibles 100% en ligne, pour s'adapter à votre emploi du temps et maintenir une pratique régulière.",
       },
       {
         title: "À partir du niveau B1",
@@ -140,11 +140,11 @@ const en: Translations = {
     label: "Conversation",
     title: "Conversation workshops",
     description:
-      "Join a workshop or suggest your own discussion topic. Other interested learners will sign up to form a dynamic group of 5 to 10 people.",
+      "Join a workshop or suggest your own discussion topic. Other interested learners will sign up to form a dynamic group of 5 to 6 participants maximum.",
     features: [
       { title: "Suggest a topic", description: "Have an idea? Suggest it to the community and spark a discussion around a topic you're passionate about." },
-      { title: "5 to 10 participants", description: "Each workshop opens from 5 sign-ups and welcomes up to 10 people to ensure quality exchanges." },
-      { title: "Regular sessions", description: "Flexible time slots, in person or online, to fit your schedule and maintain regular practice." },
+      { title: "5 to 6 participants max", description: "Each workshop welcomes up to 6 people to ensure quality exchanges and let everyone speak." },
+      { title: "Regular online sessions", description: "Flexible time slots, 100% online, to fit your schedule and maintain regular practice." },
       { title: "From B1 level", description: "Conversation workshops are designed for B1+ learners to foster rich exchanges." },
     ],
     communityTitle: "Topics suggested by the community",
@@ -232,11 +232,11 @@ const es: Translations = {
     label: "Conversación",
     title: "Talleres de conversación",
     description:
-      "Únete a un taller o propón tu propio tema de discusión. Otros estudiantes interesados se inscribirán para formar un grupo dinámico de 5 a 10 personas.",
+      "Únete a un taller o propón tu propio tema de discusión. Otros estudiantes interesados se inscribirán para formar un grupo dinámico de 5 a 6 participantes máximo.",
     features: [
       { title: "Propón un tema", description: "¿Tienes una idea? Proponla a la comunidad y lanza la discusión sobre un tema que te apasione." },
-      { title: "5 a 10 participantes", description: "Cada taller se abre a partir de 5 inscritos y acoge hasta 10 personas para garantizar la calidad de los intercambios." },
-      { title: "Sesiones regulares", description: "Horarios flexibles, presenciales u online, para adaptarse a tu agenda y mantener una práctica regular." },
+      { title: "5 a 6 participantes máx.", description: "Cada taller acoge hasta 6 personas para garantizar la calidad de los intercambios y que todos puedan expresarse." },
+      { title: "Sesiones regulares online", description: "Horarios flexibles, 100% online, para adaptarse a tu agenda y mantener una práctica regular." },
       { title: "Desde el nivel B1", description: "Los talleres de conversación están diseñados para estudiantes de nivel B1 en adelante." },
     ],
     communityTitle: "Temas propuestos por la comunidad",
@@ -324,11 +324,11 @@ const it: Translations = {
     label: "Conversazione",
     title: "Laboratori di conversazione",
     description:
-      "Unisciti a un laboratorio o proponi il tuo tema di discussione. Altri studenti interessati si iscriveranno per formare un gruppo dinamico da 5 a 10 persone.",
+      "Unisciti a un laboratorio o proponi il tuo tema di discussione. Altri studenti interessati si iscriveranno per formare un gruppo dinamico da 5 a 6 partecipanti massimo.",
     features: [
       { title: "Proponi un tema", description: "Hai un'idea? Proponila alla comunità e avvia la discussione su un tema che ti appassiona." },
-      { title: "Da 5 a 10 partecipanti", description: "Ogni laboratorio si apre da 5 iscritti e accoglie fino a 10 persone per garantire la qualità degli scambi." },
-      { title: "Sessioni regolari", description: "Orari flessibili, in presenza o online, per adattarsi al tuo programma e mantenere una pratica regolare." },
+      { title: "Da 5 a 6 partecipanti max", description: "Ogni laboratorio accoglie fino a 6 persone per garantire la qualità degli scambi e dare voce a tutti." },
+      { title: "Sessioni regolari online", description: "Orari flessibili, 100% online, per adattarsi al tuo programma e mantenere una pratica regolare." },
       { title: "Dal livello B1", description: "I laboratori di conversazione sono pensati per studenti di livello B1 e oltre." },
     ],
     communityTitle: "Temi proposti dalla comunità",
@@ -416,11 +416,11 @@ const ro: Translations = {
     label: "Conversație",
     title: "Ateliere de conversație",
     description:
-      "Participă la un atelier sau propune propria ta temă de discuție. Alți cursanți interesați se vor înscrie pentru a forma un grup dinamic de 5-10 persoane.",
+      "Participă la un atelier sau propune propria ta temă de discuție. Alți cursanți interesați se vor înscrie pentru a forma un grup dinamic de maximum 5-6 participanți.",
     features: [
       { title: "Propune o temă", description: "Ai o idee? Propune-o comunității și lansează discuția pe un subiect care te pasionează." },
-      { title: "5-10 participanți", description: "Fiecare atelier se deschide de la 5 înscriși și primește maximum 10 persoane pentru calitatea schimburilor." },
-      { title: "Sesiuni regulate", description: "Intervale flexibile, față în față sau online, pentru a se adapta programului tău." },
+      { title: "5-6 participanți max", description: "Fiecare atelier primește maximum 6 persoane pentru calitatea schimburilor și pentru ca fiecare să se exprime." },
+      { title: "Sesiuni regulate online", description: "Intervale flexibile, 100% online, pentru a se adapta programului tău." },
       { title: "De la nivelul B1", description: "Atelierele de conversație sunt concepute pentru cursanții de nivel B1 și peste." },
     ],
     communityTitle: "Teme propuse de comunitate",
