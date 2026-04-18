@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-cafe.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { CALENDLY_BOOKING_URL } from "@/config/links";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -49,13 +50,15 @@ const Hero = () => {
           href="#ateliers"
           className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
         >
-          {t.hero.ctaWorkshops}
+          Découvrir les ateliers
         </a>
         <a
-          href="#pastilles"
-          className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
+          href={CALENDLY_BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border-2 border-gold text-gold px-8 py-4 rounded font-body font-semibold text-base hover:bg-gold hover:text-accent-foreground transition-all duration-300"
         >
-          {t.hero.ctaCapsules}
+          S'inscrire
         </a>
       </motion.div>
 

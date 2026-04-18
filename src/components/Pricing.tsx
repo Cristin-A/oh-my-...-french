@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { CALENDLY_BOOKING_URL } from "@/config/links";
 
 const Pricing = () => {
   const { t } = useLanguage();
 
   const features = [
     "1h de session",
-    "Groupe de 5 à 6 personnes maximum",
-    "Thème au choix",
+    "Groupe de 5 à 6 participants maximum",
+    "Thème proposé par Oh my French! ou soumis par les participant·e·s à la session précédente",
     "Échanges authentiques et bienveillants",
   ];
 
@@ -41,9 +42,6 @@ const Pricing = () => {
             <h3 className="font-display text-2xl font-semibold text-primary-foreground mb-2">
               Atelier de conversation
             </h3>
-            <p className="font-body text-sm text-primary-foreground/60 mb-6">
-              Thème au choix, en petit groupe.
-            </p>
             <div className="mb-6">
               <span className="font-display text-5xl font-bold text-gold">25€</span>
               <span className="font-body text-sm ml-2 text-primary-foreground/50">
@@ -61,12 +59,12 @@ const Pricing = () => {
               ))}
             </ul>
             <a
-              href="https://form.typeform.com/to/FVNuNllz"
+              href={CALENDLY_BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center py-3 rounded font-body font-semibold text-sm transition-all duration-300 bg-gold text-accent-foreground hover:brightness-110"
             >
-              {t.pricing.cta}
+              S'inscrire
             </a>
           </motion.div>
 
