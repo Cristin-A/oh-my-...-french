@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Users, MessageCircle, Calendar, Star } from "lucide-react";
 import atelierImage from "@/assets/atelier-conversation.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { CALENDLY_BOOKING_URL } from "@/config/links";
 
 const icons = [MessageCircle, Users, Calendar, Star];
 
@@ -25,7 +26,7 @@ const Workshops = () => {
               {t.workshops.title}
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              {t.workshops.description}
+              Rejoignez un atelier ou proposez votre propre thème de discussion. D'autres apprenant·e·s intéressé·e·s s'inscriront pour former un groupe dynamique de 5 à 6 participants maximum, en ligne.
             </p>
           </motion.div>
 
@@ -83,12 +84,12 @@ const Workshops = () => {
             Prochains ateliers bientôt disponibles — rejoignez la liste d'attente
           </p>
           <a
-            href="https://form.typeform.com/to/FVNuNllz"
+            href={CALENDLY_BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
           >
-            Rejoindre la liste d'attente
+            S'inscrire
           </a>
         </motion.div>
       </div>

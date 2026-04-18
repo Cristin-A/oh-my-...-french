@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import pastillesImage from "@/assets/pastilles-modern.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { WAITLIST_URL } from "@/config/links";
 
 const Pastilles = () => {
   const { t } = useLanguage();
@@ -39,9 +40,6 @@ const Pastilles = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
               {t.capsules.title}
             </h2>
-            <p className="font-body text-lg text-primary-foreground/70 leading-relaxed">
-              {t.capsules.description}
-            </p>
           </motion.div>
         </div>
 
@@ -53,15 +51,15 @@ const Pastilles = () => {
           className="max-w-3xl mx-auto text-center bg-primary-foreground/5 border border-primary-foreground/10 rounded-xl p-10"
         >
           <p className="font-display text-2xl md:text-3xl font-semibold text-primary-foreground mb-6">
-            Les pastilles arrivent bientôt — inscrivez-vous pour être parmi les premiers
+            Les pastilles arrivent bientôt — inscrivez-vous pour être parmi les premiers·ères à y avoir accès.
           </p>
           <a
-            href="https://form.typeform.com/to/FVNuNllz"
+            href={WAITLIST_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
           >
-            Je m'inscris
+            S'inscrire
           </a>
         </motion.div>
       </div>
