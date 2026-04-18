@@ -1,17 +1,6 @@
 import { motion } from "framer-motion";
-import { BookOpen, PenTool, Globe, Theater } from "lucide-react";
-import { useState } from "react";
-import pastillesImage from "@/assets/pastilles-theme.jpg";
+import pastillesImage from "@/assets/pastilles-modern.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
-
-const levels = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
-const categoryIcons = [BookOpen, PenTool, Theater, Globe];
-const categoryColors = [
-  "from-blue-600/20 to-blue-500/5",
-  "from-emerald-600/20 to-emerald-500/5",
-  "from-amber-600/20 to-amber-500/5",
-  "from-rose-600/20 to-rose-500/5",
-];
 
 const Pastilles = () => {
   const [activeLevel, setActiveLevel] = useState<typeof levels[number]>("B1");
