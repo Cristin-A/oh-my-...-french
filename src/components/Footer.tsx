@@ -1,5 +1,4 @@
 import { Mail, Phone } from "lucide-react";
-import logoSpark from "@/assets/logo-spark.png";
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/links";
 
 const Footer = () => {
@@ -8,14 +7,11 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <img src={logoSpark} alt="" className="w-7 h-7" />
+            <span className="text-coral text-2xl leading-none tracking-tight">•••</span>
             <h3 className="font-display text-2xl font-bold text-primary-foreground">
               Oh my <span className="text-gold">French!</span>
             </h3>
           </div>
-          <p className="font-body text-primary-foreground/70 text-base leading-relaxed italic mb-8">
-            Oh my French! — De point en point, le français se dessine.
-          </p>
 
           <ul className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-10">
             <li className="flex items-center gap-2">
