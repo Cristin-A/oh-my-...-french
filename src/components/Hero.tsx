@@ -56,7 +56,7 @@ const Hero = () => {
           href={CALENDLY_BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary-foreground text-primary border-2 border-primary-foreground px-8 py-4 rounded font-body font-semibold text-base hover:bg-transparent hover:text-primary-foreground transition-all duration-300 shadow-lg"
+          className="bg-white text-[#E8543A] border-2 border-[#E8543A] px-8 py-4 rounded font-body font-semibold text-base hover:bg-[#E8543A] hover:text-white transition-all duration-300 shadow-lg"
         >
           S'inscrire
         </a>
