@@ -84,7 +84,7 @@ const Workshops = () => {
             Prochains ateliers bientôt disponibles — rejoignez la liste d'attente
           </p>
           <a
-            href="https://tally.so/r/GxBXaZ"
+            href="https://tally.so/r/J9kePo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"

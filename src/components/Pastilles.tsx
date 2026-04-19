@@ -54,7 +54,7 @@ const Pastilles = () => {
             Les pastilles arrivent bientôt — inscrivez-vous pour être parmi les premiers·ères à y avoir accès.
           </p>
           <a
-            href="https://tally.so/r/GxBXaZ"
+            href="https://tally.so/r/J9kePo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
