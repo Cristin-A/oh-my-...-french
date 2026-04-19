@@ -5,6 +5,7 @@ import IntroSection from "@/components/IntroSection";
 import Workshops from "@/components/Workshops";
 import Pastilles from "@/components/Pastilles";
 import Pricing from "@/components/Pricing";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,8 +17,9 @@ const Index = () => {
         <IntroSection />
         <Workshops />
         <Pastilles />
-        <Pricing />
-        <Footer />
+          <Pricing />
+          <Contact />
+          <Footer />
       </div>
     </LanguageProvider>
   );
