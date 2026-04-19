@@ -3,7 +3,7 @@ import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/links
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-primary py-16">
+    <footer className="bg-primary py-16">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
