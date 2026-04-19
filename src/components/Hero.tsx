@@ -53,7 +53,7 @@ const Hero = () => {
           Découvrir les ateliers
         </a>
         <a
-          href="https://tally.so/r/GxBXaZ"
+          href="https://tally.so/r/J9kePo"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white text-[#E8543A] border-2 border-[#E8543A] px-8 py-4 rounded font-body font-semibold text-base hover:bg-[#E8543A] hover:text-white transition-all duration-300 shadow-lg"

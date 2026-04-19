@@ -59,7 +59,7 @@ const Pricing = () => {
               ))}
             </ul>
             <a
-              href={CALENDLY_BOOKING_URL}
+              href="https://tally.so/r/J9kePo"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center py-3 rounded font-body font-semibold text-sm transition-all duration-300 bg-gold text-accent-foreground hover:brightness-110"
