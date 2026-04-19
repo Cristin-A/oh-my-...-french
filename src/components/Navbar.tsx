@@ -28,11 +28,11 @@ const Navbar = () => {
         <a href="#accueil" className="flex flex-col">
           <div className="flex items-center gap-2">
             <span className="text-coral text-3xl leading-none tracking-tight">•••</span>
-            <span className="font-display text-2xl font-bold text-primary-foreground tracking-wide">
-              Oh my French!
+            <span className="font-display text-2xl font-bold tracking-wide">
+              Oh my <span className="!text-[#E8543A]">French!</span>
             </span>
           </div>
-          <span className="font-display text-[10px] md:text-xs text-primary-foreground/50 italic tracking-wide pl-12">
+          <span className="font-display text-[13px] text-white italic tracking-wide pl-12">
             {t.hero.tagline}
           </span>
         </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="text-primary-foreground/80 hover:text-gold transition-colors duration-300 font-body text-sm font-medium uppercase tracking-widest"
+                className="text-white hover:text-gold transition-colors duration-300 font-body text-[15px] font-medium uppercase tracking-widest"
               >
                 {item.label}
               </a>
