@@ -28,7 +28,7 @@ const Navbar = () => {
         <a href="#accueil" className="flex flex-col">
           <div className="flex items-center gap-2">
             <span className="text-coral text-3xl leading-none tracking-tight">•••</span>
-            <span className="font-display text-2xl font-bold tracking-wide">
+            <span className="font-display text-2xl font-bold tracking-wide text-white">
               Oh my <span className="!text-[#E8543A]">French!</span>
             </span>
           </div>
