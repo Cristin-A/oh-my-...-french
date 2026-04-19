@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logoSpark from "@/assets/logo-spark.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang, langLabels } from "@/i18n/translations";
 
@@ -28,12 +27,12 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#accueil" className="flex flex-col">
           <div className="flex items-center gap-2">
-            <img src={logoSpark} alt="Oh my French!" className="w-8 h-8" />
+            <span className="text-coral text-3xl leading-none tracking-tight">•••</span>
             <span className="font-display text-2xl font-bold text-primary-foreground tracking-wide">
               Oh my French!
             </span>
           </div>
-          <span className="font-display text-[10px] md:text-xs text-primary-foreground/50 italic tracking-wide pl-10">
+          <span className="font-display text-[10px] md:text-xs text-primary-foreground/50 italic tracking-wide pl-12">
             {t.hero.tagline}
           </span>
         </a>
