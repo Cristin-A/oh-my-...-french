@@ -48,7 +48,7 @@ const Hero = () => {
       >
         <a
           href="#ateliers"
-          className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
+          className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300 shadow-lg"
         >
           Découvrir les ateliers
         </a>
@@ -56,7 +56,7 @@ const Hero = () => {
           href={CALENDLY_BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300 shadow-lg"
+          className="bg-primary-foreground text-primary border-2 border-primary-foreground px-8 py-4 rounded font-body font-semibold text-base hover:bg-transparent hover:text-primary-foreground transition-all duration-300 shadow-lg"
         >
           S'inscrire
         </a>
