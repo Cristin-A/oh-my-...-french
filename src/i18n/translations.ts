@@ -465,7 +465,7 @@ const ro: Translations = {
         price: "25",
         unit: "per sesiune",
         description: "Participă la un atelier de conversație în grup mic.",
-        features: ["1 sesiune de 90 minute", "Grup de 5-10 persoane", "Temă la alegere", "Feedback personalizat", "Suport post-sesiune"],
+        features: ["1 sesiune de 1h30", "Grup de 5-10 persoane", "Temă la alegere", "Feedback personalizat", "Suport post-sesiune"],
       },
       {
         name: "Abonament lunar",
