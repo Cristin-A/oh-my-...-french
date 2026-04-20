@@ -56,7 +56,7 @@ const Hero = () => {
           href="https://tally.so/r/J9kePo"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-[#E8543A] border-2 border-[#E8543A] px-8 py-4 rounded font-body font-semibold text-base hover:bg-[#E8543A] hover:text-white transition-all duration-300 shadow-lg"
+          className="bg-white text-gold border-2 border-gold px-8 py-4 rounded font-body font-semibold text-base hover:bg-gold hover:text-white transition-all duration-300 shadow-lg"
         >
           S'inscrire
         </a>

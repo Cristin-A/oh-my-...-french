@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="text-coral text-2xl leading-none tracking-tight">•••</span>
+            <span className="text-gold text-2xl leading-none tracking-tight">•••</span>
             <h3 className="font-display text-2xl font-bold text-primary-foreground">
               Oh my <span className="text-gold">French!</span>
             </h3>

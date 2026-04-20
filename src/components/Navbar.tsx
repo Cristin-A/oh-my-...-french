@@ -27,9 +27,9 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#accueil" className="flex flex-col">
           <div className="flex items-center gap-2">
-            <span className="text-coral text-3xl leading-none tracking-tight">•••</span>
+            <span className="text-gold text-3xl leading-none tracking-tight">•••</span>
             <span className="font-display text-2xl font-bold tracking-wide text-white">
-              Oh my <span className="!text-[#E8543A]">French!</span>
+              Oh my <span className="text-gold">French!</span>
             </span>
           </div>
           <span className="font-display text-[13px] text-white italic tracking-wide pl-12">
