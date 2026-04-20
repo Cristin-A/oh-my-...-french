@@ -97,7 +97,7 @@ const fr = {
         price: "25",
         unit: "par session",
         description: "Participez à un atelier de conversation en petit groupe.",
-        features: ["1 session de 90 minutes", "Groupe de 5 à 10 personnes", "Thème au choix", "Feedback personnalisé", "Support après la session"],
+        features: ["1 session de 1h30", "Groupe de 5 à 10 personnes", "Thème au choix", "Feedback personnalisé", "Support après la session"],
       },
       {
         name: "Forfait mensuel",
