@@ -31,7 +31,7 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="text-coral text-2xl leading-none tracking-tight">•••</span>
+            <span className="text-gold text-2xl leading-none tracking-tight">•••</span>
             <span className="font-body text-xs uppercase tracking-[0.3em] text-gold">
               {t.nav.contact}
             </span>

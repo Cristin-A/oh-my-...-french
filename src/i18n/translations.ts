@@ -97,7 +97,7 @@ const fr = {
         price: "25",
         unit: "par session",
         description: "Participez à un atelier de conversation en petit groupe.",
-        features: ["1 session de 90 minutes", "Groupe de 5 à 10 personnes", "Thème au choix", "Feedback personnalisé", "Support après la session"],
+        features: ["1 session de 1h30", "Groupe de 5 à 10 personnes", "Thème au choix", "Feedback personnalisé", "Support après la session"],
       },
       {
         name: "Forfait mensuel",
@@ -189,7 +189,7 @@ const en: Translations = {
         price: "25",
         unit: "per session",
         description: "Join a small-group conversation workshop.",
-        features: ["1 × 90-minute session", "Group of 5 to 10", "Topic of your choice", "Personalised feedback", "Post-session support"],
+        features: ["1 × 1h30 session", "Group of 5 to 10", "Topic of your choice", "Personalised feedback", "Post-session support"],
       },
       {
         name: "Monthly plan",
@@ -281,7 +281,7 @@ const es: Translations = {
         price: "25",
         unit: "por sesión",
         description: "Participa en un taller de conversación en grupo reducido.",
-        features: ["1 sesión de 90 minutos", "Grupo de 5 a 10 personas", "Tema a elegir", "Feedback personalizado", "Soporte tras la sesión"],
+        features: ["1 sesión de 1h30", "Grupo de 5 a 10 personas", "Tema a elegir", "Feedback personalizado", "Soporte tras la sesión"],
       },
       {
         name: "Forfait mensual",
@@ -373,7 +373,7 @@ const it: Translations = {
         price: "25",
         unit: "per sessione",
         description: "Partecipa a un laboratorio di conversazione in piccolo gruppo.",
-        features: ["1 sessione di 90 minuti", "Gruppo da 5 a 10 persone", "Tema a scelta", "Feedback personalizzato", "Supporto post-sessione"],
+        features: ["1 sessione di 1h30", "Gruppo da 5 a 10 persone", "Tema a scelta", "Feedback personalizzato", "Supporto post-sessione"],
       },
       {
         name: "Abbonamento mensile",
@@ -465,7 +465,7 @@ const ro: Translations = {
         price: "25",
         unit: "per sesiune",
         description: "Participă la un atelier de conversație în grup mic.",
-        features: ["1 sesiune de 90 minute", "Grup de 5-10 persoane", "Temă la alegere", "Feedback personalizat", "Suport post-sesiune"],
+        features: ["1 sesiune de 1h30", "Grup de 5-10 persoane", "Temă la alegere", "Feedback personalizat", "Suport post-sesiune"],
       },
       {
         name: "Abonament lunar",

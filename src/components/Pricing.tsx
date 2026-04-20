@@ -7,10 +7,17 @@ const Pricing = () => {
   const { t } = useLanguage();
 
   const features = [
-    "1h de session",
+    "1h30 de session",
     "Groupe de 5 à 6 participants maximum",
     "Thème proposé par Oh my French! ou soumis par les participant·e·s à la session précédente",
     "Échanges authentiques et bienveillants",
+  ];
+
+  const packFeatures = [
+    "5 ateliers de conversation",
+    "Valables pendant 2 mois",
+    "Économisez 20% (25€)",
+    "Flexibilité totale",
   ];
 
   return (
@@ -31,7 +38,8 @@ const Pricing = () => {
           </h2>
         </motion.div>
 
-        <div className="max-w-md mx-auto">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Single session */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -68,9 +76,45 @@ const Pricing = () => {
             </a>
           </motion.div>
 
-          <p className="text-center font-body text-muted-foreground mt-8 italic">
-            D'autres formules à venir.
-          </p>
+          {/* 5 sessions pack */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-card text-card-foreground border-2 border-gold rounded-xl p-8 flex flex-col relative"
+          >
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-accent-foreground px-4 py-1 rounded-full font-body text-sm font-semibold">
+              Économisez 20%
+            </div>
+            <h3 className="font-display text-2xl font-semibold text-foreground mb-2">
+              Pack 5 ateliers
+            </h3>
+            <div className="mb-6">
+              <span className="font-display text-5xl font-bold text-gold">100€</span>
+              <span className="font-body text-sm ml-2 text-muted-foreground">
+                / 5 séances
+              </span>
+            </div>
+            <ul className="space-y-3 mb-8 flex-1">
+              {packFeatures.map((feature) => (
+                <li key={feature} className="flex items-start gap-3">
+                  <Check size={16} className="mt-0.5 flex-shrink-0 text-gold" />
+                  <span className="font-body text-sm text-muted-foreground">
+                    {feature}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href="https://tally.so/r/J9kePo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center py-3 rounded font-body font-semibold text-sm transition-all duration-300 bg-gold text-accent-foreground hover:brightness-110"
+            >
+              S'inscrire
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>
