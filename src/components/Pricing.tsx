@@ -7,10 +7,17 @@ const Pricing = () => {
   const { t } = useLanguage();
 
   const features = [
-    "1h de session",
+    "1h30 de session",
     "Groupe de 5 à 6 participants maximum",
     "Thème proposé par Oh my French! ou soumis par les participant·e·s à la session précédente",
     "Échanges authentiques et bienveillants",
+  ];
+
+  const packFeatures = [
+    "5 ateliers de conversation",
+    "Valables pendant 2 mois",
+    "Économisez 20% (25€)",
+    "Flexibilité totale",
   ];
 
   return (
