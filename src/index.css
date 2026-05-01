@@ -15,69 +15,69 @@
     --popover: 40 30% 98%;
     --popover-foreground: 220 40% 13%;
 
-    --primary: 220 50% 18%;
+    --primary: 218 76% 13%;
     --primary-foreground: 40 33% 96%;
 
     --secondary: 40 40% 90%;
-    --secondary-foreground: 220 40% 13%;
+    --secondary-foreground: 218 76% 13%;
 
     --muted: 40 20% 92%;
     --muted-foreground: 220 15% 45%;
 
-    --accent: 9 80% 57%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 34 53% 59%;
+    --accent-foreground: 218 76% 13%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 20% 88%;
     --input: 220 20% 88%;
-    --ring: 9 80% 57%;
+    --ring: 34 53% 59%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 220 50% 18%;
+    --sidebar-background: 218 76% 13%;
     --sidebar-foreground: 40 33% 96%;
-    --sidebar-primary: 9 80% 57%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 45% 25%;
+    --sidebar-primary: 34 53% 59%;
+    --sidebar-primary-foreground: 218 76% 13%;
+    --sidebar-accent: 218 60% 22%;
     --sidebar-accent-foreground: 40 33% 96%;
-    --sidebar-border: 220 40% 25%;
-    --sidebar-ring: 9 80% 57%;
+    --sidebar-border: 218 50% 22%;
+    --sidebar-ring: 34 53% 59%;
 
-    /* Custom tokens — gold is now aliased to coral for a unified accent */
-    --gold: 9 80% 57%;
-    --gold-light: 9 75% 70%;
-    --navy: 220 50% 18%;
-    --navy-light: 220 40% 30%;
+    /* Custom tokens — gold matches the logo (#CF9F5C) */
+    --gold: 34 53% 59%;
+    --gold-light: 34 60% 72%;
+    --navy: 218 76% 13%;
+    --navy-light: 218 60% 22%;
     --cream: 40 33% 96%;
     --cream-dark: 40 25% 90%;
-    --coral: 9 80% 57%;
+    --coral: 34 53% 59%;
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'Source Sans 3', sans-serif;
   }
 
   .dark {
-    --background: 220 50% 8%;
+    --background: 218 76% 8%;
     --foreground: 40 33% 96%;
-    --card: 220 50% 12%;
+    --card: 218 70% 12%;
     --card-foreground: 40 33% 96%;
-    --popover: 220 50% 12%;
+    --popover: 218 70% 12%;
     --popover-foreground: 40 33% 96%;
-    --primary: 9 80% 57%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 220 45% 20%;
+    --primary: 34 53% 59%;
+    --primary-foreground: 218 76% 13%;
+    --secondary: 218 50% 20%;
     --secondary-foreground: 40 33% 96%;
-    --muted: 220 40% 18%;
+    --muted: 218 40% 18%;
     --muted-foreground: 40 15% 65%;
-    --accent: 9 80% 57%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 34 53% 59%;
+    --accent-foreground: 218 76% 13%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 220 40% 22%;
-    --input: 220 40% 22%;
-    --ring: 9 80% 57%;
+    --border: 218 40% 22%;
+    --input: 218 40% 22%;
+    --ring: 34 53% 59%;
   }
 }
 
