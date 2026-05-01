@@ -1,13 +1,14 @@
 import { Mail, Phone } from "lucide-react";
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/links";
+import logo from "@/assets/logo-ohmyfrench.svg";
 
 const Footer = () => {
   return (
     <footer className="bg-primary py-16">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="text-gold text-2xl leading-none tracking-tight">•••</span>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <img src={logo} alt="Oh my French!" className="h-12 w-12 rounded-md" />
             <h3 className="font-display text-2xl font-bold text-primary-foreground">
               Oh my <span className="text-gold">French!</span>
             </h3>
