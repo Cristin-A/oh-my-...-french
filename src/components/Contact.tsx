@@ -1,74 +1,73 @@
-import { useEffect } from "react";
+import { Mail, Phone, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { TALLY_CONTACT_URL } from "@/config/links";
-
-const TALLY_FORM_ID = "GxBXaZ";
+import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/links";
 
 const Contact = () => {
   const { t } = useLanguage();
 
-  useEffect(() => {
-    const existing = document.querySelector<HTMLScriptElement>(
-      'script[src="https://tally.so/widgets/embed.js"]'
-    );
-    const loadEmbeds = () => {
-      // @ts-expect-error Tally global injected by the embed script
-      if (typeof window.Tally !== "undefined") window.Tally.loadEmbeds();
-    };
-    if (existing) {
-      loadEmbeds();
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = "https://tally.so/widgets/embed.js";
-    script.async = true;
-    script.onload = loadEmbeds;
-    document.body.appendChild(script);
-  }, []);
+  const mailtoHref = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+    "Contact — Oh my French!"
+  )}`;
 
   return (
     <section id="contact" className="bg-background py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-10">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="text-gold text-2xl leading-none tracking-tight">•••</span>
-            <span className="font-body text-xs uppercase tracking-[0.3em] text-gold">
-              {t.nav.contact}
-            </span>
-          </div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
+          <span className="font-body text-xs uppercase tracking-[0.3em] text-gold">
+            {t.nav.contact}
+          </span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-4 mb-4">
             Une question, une idée&nbsp;?
           </h2>
           <p className="font-body text-base md:text-lg text-muted-foreground">
-            Écrivez-nous via le formulaire ci-dessous — nous vous répondrons rapidement.
+            Écrivez-nous directement — nous vous répondrons rapidement.
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto bg-card border border-border rounded-xl shadow-sm overflow-hidden">
-          <iframe
-            data-tally-src={`${TALLY_CONTACT_URL}?transparentBackground=1`}
-            loading="lazy"
-            width="100%"
-            height="600"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            title="Formulaire de contact Oh my French!"
-            src={`${TALLY_CONTACT_URL}?transparentBackground=1`}
-          />
-        </div>
+        <div className="max-w-2xl mx-auto bg-card border border-border rounded-2xl shadow-sm p-8 md:p-10">
+          <ul className="space-y-5 mb-8">
+            <li className="flex items-center gap-4">
+              <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                <Mail className="text-gold" size={20} />
+              </span>
+              <div className="text-left">
+                <p className="font-body text-xs uppercase tracking-wider text-muted-foreground">
+                  Email
+                </p>
+                <a
+                  href={mailtoHref}
+                  className="font-body text-base font-medium text-primary hover:text-gold transition-colors"
+                >
+                  {CONTACT_EMAIL}
+                </a>
+              </div>
+            </li>
+            <li className="flex items-center gap-4">
+              <span className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
+                <Phone className="text-gold" size={20} />
+              </span>
+              <div className="text-left">
+                <p className="font-body text-xs uppercase tracking-wider text-muted-foreground">
+                  Téléphone
+                </p>
+                <a
+                  href={`tel:${CONTACT_PHONE_HREF}`}
+                  className="font-body text-base font-medium text-primary hover:text-gold transition-colors"
+                >
+                  {CONTACT_PHONE}
+                </a>
+              </div>
+            </li>
+          </ul>
 
-        <p className="text-center mt-6 font-body text-sm text-muted-foreground">
-          Le formulaire ne s'affiche pas&nbsp;?{" "}
           <a
-            href={TALLY_CONTACT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gold hover:underline font-medium"
+            href={mailtoHref}
+            className="w-full inline-flex items-center justify-center gap-2 bg-gold text-accent-foreground px-6 py-3.5 rounded font-body font-semibold text-sm hover:brightness-110 transition-all duration-300"
           >
-            Ouvrir dans un nouvel onglet
+            Nous écrire un email
+            <ArrowRight size={16} />
           </a>
-        </p>
+        </div>
       </div>
     </section>
   );

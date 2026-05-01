@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang, langLabels } from "@/i18n/translations";
+import logo from "@/assets/logo-ohmyfrench.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,15 +26,14 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary-foreground/10"
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#accueil" className="flex flex-col">
-          <div className="flex items-center gap-2">
-            <span className="text-gold text-3xl leading-none tracking-tight">•••</span>
-            <span className="font-display text-2xl font-bold tracking-wide text-white">
-              Oh my <span className="text-gold">French!</span>
-            </span>
-          </div>
-          <span className="font-display text-[13px] text-white italic tracking-wide pl-12">
-            {t.hero.tagline}
+        <a href="#accueil" className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt="Oh my French!"
+            className="h-12 w-12 md:h-14 md:w-14 rounded-md"
+          />
+          <span className="font-display text-2xl font-bold tracking-wide text-white">
+            Oh my <span className="text-gold">French!</span>
           </span>
         </a>
 
