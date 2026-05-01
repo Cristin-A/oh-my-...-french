@@ -30,7 +30,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Oh my French!"
-            className="h-16 w-16 md:h-20 md:w-20 rounded-md"
+            className="h-24 w-24 md:h-28 md:w-28 rounded-md"
           />
         </a>
 

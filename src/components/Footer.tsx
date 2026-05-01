@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex items-center justify-center mb-4">
-            <img src={logo} alt="Oh my French!" className="h-20 w-20 md:h-24 md:w-24 rounded-md" />
+            <img src={logo} alt="Oh my French!" className="h-28 w-28 md:h-32 md:w-32 rounded-md" />
           </div>
 
           <ul className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-10">
