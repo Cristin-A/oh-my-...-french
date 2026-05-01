@@ -26,15 +26,12 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary-foreground/10"
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#accueil" className="flex items-center gap-3">
+        <a href="#accueil" className="flex items-center" aria-label="Oh my French!">
           <img
             src={logo}
             alt="Oh my French!"
-            className="h-12 w-12 md:h-14 md:w-14 rounded-md"
+            className="h-16 w-16 md:h-20 md:w-20 rounded-md"
           />
-          <span className="font-display text-2xl font-bold tracking-wide text-white">
-            Oh my <span className="text-gold">French!</span>
-          </span>
         </a>
 
         {/* Desktop */}
