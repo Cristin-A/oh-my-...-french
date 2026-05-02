@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang, langLabels } from "@/i18n/translations";
-import logo from "@/assets/logo-ohmyfrench.svg";
+import logo from "@/assets/logo-ohmyfrench-transparent.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Oh my French!"
-            className="h-24 w-24 md:h-28 md:w-28 rounded-md"
+            className="h-24 w-24 md:h-28 md:w-28"
           />
         </a>
 
