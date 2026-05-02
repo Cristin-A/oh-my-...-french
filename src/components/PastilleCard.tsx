@@ -232,23 +232,31 @@ function Slide3({ pastille }: { pastille: Pastille }) {
             ))}
           </ul>
 
-          <p className="text-[14px] italic mb-2 text-white font-display" style={{ lineHeight: 1.5 }}>
-            Et toi ? Tu t'y reconnais ?
-          </p>
-          <p className="text-[14px] italic mb-5 text-white font-display" style={{ lineHeight: 1.5 }}>
-            Tu as vécu — ou tu imagines — une situation où{" "}
-            <span className="text-gold not-italic font-medium font-display">
-              tu aurais pu / tu pourrais la placer
-            </span>{" "}
-            ?
-          </p>
+          {pastille.invitation ? (
+            <p className="text-[14px] italic mb-5 text-white font-display" style={{ lineHeight: 1.5 }}>
+              {pastille.invitation}
+            </p>
+          ) : (
+            <>
+              <p className="text-[14px] italic mb-2 text-white font-display" style={{ lineHeight: 1.5 }}>
+                Et toi ? Tu t'y reconnais ?
+              </p>
+              <p className="text-[14px] italic mb-5 text-white font-display" style={{ lineHeight: 1.5 }}>
+                Tu as vécu — ou tu imagines — une situation où{" "}
+                <span className="text-gold not-italic font-medium font-display">
+                  tu aurais pu / tu pourrais la placer
+                </span>{" "}
+                ?
+              </p>
+            </>
+          )}
 
           <div className="mt-auto flex justify-end pb-2">
             <button
               onClick={() => setStage("input")}
               className="px-6 py-3 rounded-full text-[12px] font-medium bg-gold text-primary font-display"
             >
-              Oui, je la place !
+              {pastille.bouton ?? "Oui, je la place !"}
             </button>
           </div>
         </>
