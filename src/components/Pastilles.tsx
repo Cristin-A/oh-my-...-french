@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import pastillesImage from "@/assets/pastilles-modern.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { WAITLIST_URL } from "@/config/links";
+import PastilleCard from "@/components/PastilleCard";
+import { PASTILLES } from "@/data/pastilles";
 
 const Pastilles = () => {
   const { t } = useLanguage();
+  const featured = PASTILLES[0];
 
   return (
     <section id="pastilles" className="py-24 bg-primary">
@@ -17,14 +18,7 @@ const Pastilles = () => {
             transition={{ duration: 0.6 }}
             className="order-2 lg:order-1"
           >
-            <img
-              src={pastillesImage}
-              alt="Mots français flottants en navy et or"
-              loading="lazy"
-              width={1024}
-              height={1024}
-              className="rounded-xl shadow-2xl w-full max-w-md mx-auto"
-            />
+            <PastilleCard pastille={featured} />
           </motion.div>
 
           <motion.div
@@ -40,6 +34,9 @@ const Pastilles = () => {
             <h2 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
               {t.capsules.title}
             </h2>
+            <p className="font-body text-base text-primary-foreground/70 leading-relaxed">
+              Trois volets, une expression : découvre, comprends, place-la. Glisse de gauche à droite pour explorer la pastille.
+            </p>
           </motion.div>
         </div>
 
@@ -51,7 +48,7 @@ const Pastilles = () => {
           className="max-w-3xl mx-auto text-center bg-primary-foreground/5 border border-primary-foreground/10 rounded-xl p-10"
         >
           <p className="font-display text-2xl md:text-3xl font-semibold text-primary-foreground mb-6">
-            Les pastilles arrivent bientôt — inscrivez-vous pour être parmi les premiers·ères à y avoir accès.
+            D'autres pastilles arrivent bientôt — inscrivez-vous pour être parmi les premiers·ères à y avoir accès.
           </p>
           <a
             href="https://tally.so/r/J9kePo"
@@ -68,3 +65,4 @@ const Pastilles = () => {
 };
 
 export default Pastilles;
+
