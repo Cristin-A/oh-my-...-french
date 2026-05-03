@@ -85,14 +85,11 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
 
-          <a
-            href="https://tally.so/r/J9kePo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gold text-accent-foreground px-6 py-2.5 rounded font-body font-semibold text-sm hover:brightness-110 transition-all duration-300"
+          <TallyDialog
+            triggerClassName="bg-gold text-accent-foreground px-6 py-2.5 rounded font-body font-semibold text-sm hover:brightness-110 transition-all duration-300"
           >
             {t.nav.book}
-          </a>
+          </TallyDialog>
         </div>
 
         {/* Mobile toggle */}
