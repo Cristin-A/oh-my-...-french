@@ -25,7 +25,7 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary-foreground/10"
     >
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-6 py-1 flex items-center justify-between h-16 md:h-20">
         <a href="#accueil" className="flex items-center" aria-label="Oh my French!">
           <img
             src={logo}
@@ -86,7 +86,9 @@ const Navbar = () => {
           </div>
 
           <a
-            href="#tarifs"
+            href="https://tally.so/r/J9kePo"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gold text-accent-foreground px-6 py-2.5 rounded font-body font-semibold text-sm hover:brightness-110 transition-all duration-300"
           >
             {t.nav.book}
@@ -143,7 +145,9 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#tarifs"
+                  href="https://tally.so/r/J9kePo"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
                   className="bg-gold text-accent-foreground px-6 py-2.5 rounded font-body font-semibold text-sm"
                 >

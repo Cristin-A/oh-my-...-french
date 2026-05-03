@@ -73,25 +73,6 @@ const Workshops = () => {
           })}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center bg-card border border-border rounded-xl p-10"
-        >
-          <p className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-6">
-            Prochains ateliers bientôt disponibles — rejoignez la liste d'attente
-          </p>
-          <a
-            href="https://tally.so/r/J9kePo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
-          >
-            S'inscrire
-          </a>
-        </motion.div>
       </div>
     </section>
   );
