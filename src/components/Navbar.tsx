@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Lang, langLabels } from "@/i18n/translations";
 import logo from "@/assets/logo-ohmyfrench-transparent.svg";
+import TallyDialog from "@/components/TallyDialog";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -141,15 +142,11 @@ const Navbar = () => {
                 ))}
               </li>
               <li>
-                <a
-                  href="https://tally.so/r/J9kePo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsOpen(false)}
-                  className="bg-gold text-accent-foreground px-6 py-2.5 rounded font-body font-semibold text-sm"
+                <TallyDialog
+                  triggerClassName="bg-gold text-accent-foreground px-6 py-2.5 rounded font-body font-semibold text-sm"
                 >
                   {t.nav.book}
-                </a>
+                </TallyDialog>
               </li>
             </ul>
           </motion.div>

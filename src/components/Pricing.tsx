@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { CALENDLY_BOOKING_URL } from "@/config/links";
+import TallyDialog from "@/components/TallyDialog";
 
 const Pricing = () => {
   const { t } = useLanguage();
@@ -66,14 +66,11 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <a
-              href="https://tally.so/r/J9kePo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full text-center py-3 rounded font-body font-semibold text-sm transition-all duration-300 bg-gold text-accent-foreground hover:brightness-110"
+            <TallyDialog
+              triggerClassName="w-full text-center py-3 rounded font-body font-semibold text-sm transition-all duration-300 bg-gold text-accent-foreground hover:brightness-110"
             >
               S'inscrire
-            </a>
+            </TallyDialog>
           </motion.div>
 
           {/* 5 sessions pack */}
@@ -106,14 +103,11 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <a
-              href="https://tally.so/r/J9kePo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full text-center py-3 rounded font-body font-semibold text-sm transition-all duration-300 bg-gold text-accent-foreground hover:brightness-110"
+            <TallyDialog
+              triggerClassName="w-full text-center py-3 rounded font-body font-semibold text-sm transition-all duration-300 bg-gold text-accent-foreground hover:brightness-110"
             >
               S'inscrire
-            </a>
+            </TallyDialog>
           </motion.div>
         </div>
 
@@ -127,14 +121,11 @@ const Pricing = () => {
           <p className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-6">
             D'autres formules bientôt disponibles
           </p>
-          <a
-            href="https://tally.so/r/J9kePo?hideTitle=1&transparentBackground=1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
+          <TallyDialog
+            triggerClassName="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
           >
             S'inscrire
-          </a>
+          </TallyDialog>
         </motion.div>
       </div>
     </section>
