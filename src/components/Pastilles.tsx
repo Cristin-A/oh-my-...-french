@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PastilleCard from "@/components/PastilleCard";
 import { PASTILLES } from "@/data/pastilles";
+import TallyDialog from "@/components/TallyDialog";
 
 const Pastilles = () => {
   const { t } = useLanguage();
