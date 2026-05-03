@@ -97,14 +97,11 @@ const Pastilles = () => {
           <p className="font-display text-2xl md:text-3xl font-semibold text-primary-foreground mb-6">
             D'autres pastilles arrivent bientôt — inscrivez-vous pour être parmi les premiers·ères à recevoir les nouveautés.
           </p>
-          <a
-            href="https://tally.so/r/J9kePo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
+          <TallyDialog
+            triggerClassName="inline-block bg-gold text-accent-foreground px-8 py-4 rounded font-body font-semibold text-base hover:brightness-110 transition-all duration-300"
           >
             S'inscrire
-          </a>
+          </TallyDialog>
         </motion.div>
       </div>
     </section>
